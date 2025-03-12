@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+  }
+.content {
+    min-width: 768px;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+body {
+    font-family: Merriweather;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+#navigation a:hover{
+    color: black;
+}
+#middle-sections a:hover{
+    color: black;
+}
+#steps a:hover{
+    color: black;
+}
+#navigation {
+    list-style-type: none;
+    font-family: MontSerrat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+#nav-menu ul li {
+    display: inline;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+#nav-menu ul li a {
+    margin: 0;
+    text-decoration: none;
+    color: #bfbfbf; 
+    padding: 10px;
+}
+#nav-menu ul {
+    letter-spacing: .05em;
+    padding: 0;
+    float: right;
+}
+#nav-logo a{
+    padding-left: 0;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+}
+#about .content h2 {
+    text-align: center;
+    margin-top: 0;
+}
+#about {
+    text-align: center;
+}
+#about .content p {
+    font-size: 18px;
+    color: #898989;
+    margin-bottom: 40px;
+}
+#header .content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#header .content img {
+    width: 100%;
+}
+#header .content h1 {
+    position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+    font-size: 32px;
+    font-weight: normal;
+    font-family: MontSerrat;
+}
+#about {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+#about .content .about-item {
+    display: inline-block;
+    width: 33%;
+    text-align: left;
+}
+#about .content .about-item p {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+.about-item img {
+    width: 100%;
+}
+#about .content .about-item:nth-child(1) {
+    padding-right: 26.5px;
+}
+#about .content .about-item:nth-child(2) {
+    padding-left: 13.25px;
+    padding-right: 13.25px;
+}
+#about .content .about-item:nth-child(3) {
+    padding-left: 26.5px;
+}
+
+.about-item p {
+    color: #bfbfbf;
+    font-size: 14px;
+}
+#about .content .about-item h3 {
+    color:#4d4d4d;
+}
+#about .content h2 {
+    font-size: 40px;
+    color: #4d4d4d;
+    font-weight: normal;
+    font-family: MontSerrat;
+}
+#about .content h3 {
+    font-size: 24px;
+    color: #898989;
+    font-weight: normal;
+    font-family: MontSerrat;
+}
+
+#middle-sections .content{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+#middle-sections {
+    background-color: whitesmoke;
+    width: 100%;
+    left: 0;
+    clear: both;
+}
+#middle-sections .content h2{
+    font-size: 32px;
+    font-weight: normal;
+    font-family: MontSerrat;
+    margin-top: 0;
+    color: #4d4d4d;
+}
+#middle-sections .content h3{
+    font-size: 24px;
+    font-family: MontSerrat;
+}
+#news {
+    width: 60%;
+}
+#references {
+    width: 40%;    
+}
+#references img {
+    border-radius: 50%;
+    width: 120px;
+    float: left;
+    margin-right: 20px;
+} 
+#references blockquote {
+    font-style: italic;
+    
+    margin-bottom: 40px;
+}
+#references blockquote p {
+    font-size: 16px;
+    color: #4f4f4f;
+    margin-bottom: 45px;
+    margin-top: 0;
+    width: 93%;
+}
+#references blockquote span {
+    position: relative;
+    left: -40px;
+    font-size: 14px;
+    color: #bfbfbf;
+}
+.news-date {
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.news-item h3 a {
+    text-decoration: none;
+    color: steelblue;
+    font-weight: normal;
+}
+.news-item h3 {
+    margin-top: 0;
+    font-family: MontSerrat;
+}
+.news-item {
+    border-bottom: 1px solid #e3e3e3;  
+    margin-bottom: 20px; 
+}
+.news-item p {
+    color: #898989; 
+    font-size: 14px;
+}
+#news-btn a{
+    font-size: 13px;
+    color: steelblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 11px 17px;
+    background-color: lightsteelblue;
+    letter-spacing: .15em;
+    font-family: Montserrat;
+}
+#news {
+    margin-right: 20px;
+}
+#steps .content {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.steps-more a{
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: steelblue;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+.steps-item {
+    width: 33%;
+    float: left;
+}
+#steps .content .steps-item i {
+    font-size: 60px;
+    float: left;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 190px;
+    color: lightsteelblue;
+}
+.steps-item h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    color: #4d4d4d;
+}
+.steps-item p {
+    color: #898989;
+}
+#steps .content .steps-item:nth-child(1) {
+    padding-right: 26.5px;
+}
+#steps .content .steps-item:nth-child(2) {
+    padding-left: 13.25px;
+    padding-right: 13.25px;
+}
+#steps .content .steps-item:nth-child(3) {
+    padding-left: 26.5px;
+}
+#contact .content {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+#contact {
+    background-color: #262626;
+    width: 100%;
+    left: 0;
+    clear: both;
+}
+.contact-item {
+    width: 33%;
+    float: left;
+}
+.contact-item h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Montserrat;
+    margin-top: 0;
+}
+.contact-item p {
+    color: #898989;
+}
+.contact-item ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-item ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: steelblue;
+    font-family: Montserrat;
+    
+}
+.contact-item ul li a:hover {
+    color: white;
+}
+.contact-item input:not(:valid) {
+    color: red;
+}
+#email-form {
+    font-size: 18px;
+    height: 54px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    width: 100%;
+    border: none;
+}
+#submit-btn {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    height: 54px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background-color: steelblue;
+    color: white;
+    border: none;
+}
+#footer-note .content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer-note {
+    background-color: #1a1a1a;
+}
+#footer-note .content span {
+    color: #898989;
+    font-size: 12px;
+}

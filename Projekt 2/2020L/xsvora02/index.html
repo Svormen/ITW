@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>F1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-1.9.1.min.js"></script>
+    <script>
+    function getCookie(nazov_cookie) {
+    	var meno = nazov_cookie + "=";
+    	var pole = document.cookie.split(';');
+    	for(var i = 0; i < pole.length; i++) {
+        	var c = pole[i];
+        	while (c.charAt(0) == ' ') {
+            	c = c.substring(1);
+        	}
+        	if (c.indexOf(meno) == 0) {
+            	return c.substring(meno.length, c.length);
+        	}
+    	}
+    	return "";
+	}
+	$( document ).ready(function() {
+		var i = 0;
+		if (getCookie("toggle") == 1) {
+			i = 1;
+		}
+
+		if (i == 0) {
+			$( "#toggle" ).toggleClass("hidden");
+		}
+		var tlacitko = ["Zobraziť viac","Zobraziť menej"];
+
+		$("#hide").html(tlacitko[i%2]);
+		
+		$( "#hide" ).click(function() {
+		  i++;
+		  i = i%2;
+		  $( "#toggle" ).toggle( "fast" );
+		  $("#hide").html(tlacitko[i%2]);
+		  document.cookie = "toggle" + "=" + i%2;
+		});
+	});
+    </script>
+</head>
+<body>
+<header id="head" >
+<div class="content">
+	<nav id="menu">
+	  <div class="inside">
+		<ul class="main">
+			<li><a href="http://www.stud.fit.vutbr.cz/~xsvora02/index.html">HOME</a></li>
+			<li><a href="o_time.html">O TÍME</a></li>
+			<div class="dropdown">
+				<li class="dropbtn"><a href="jazdci.html">JAZDCI</a></li>
+				<div class="dropdown-content">
+				  <a href="jazdci.html#j1">Lewis Hamilton</a>
+				  <a href="jazdci.html#j2">Valtteri Bottas</a>
+				</div>
+			  </div>
+			<li><a href="kontakt.html">KONTAKT</a></li>
+		</ul>
+	  </div>
+	</nav>			
+</div>	
+</header>
+<section id="main">
+<h3>VITAJTE V TÍME MERCEDES</h3>
+<div class="full">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tellus lorem. Phasellus tempor, est ac pretium dictum, mi diam maximus tellus, id rhoncus neque ex at risus. Mauris et nibh magna. Pellentesque porttitor justo vel arcu dignissim sodales. Vivamus fringilla turpis quam, ut scelerisque libero consectetur at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla volutpat turpis nec lorem placerat condimentum. Praesent et eros dolor. Sed nec pulvinar ante, in imperdiet dui. Fusce non sollicitudin dolor. </p>
+	<p id="toggle" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tellus lorem. Phasellus tempor, est ac pretium dictum, mi diam maximus tellus, id rhoncus neque ex at risus. Mauris et nibh magna. Pellentesque porttitor justo vel arcu dignissim sodales. Vivamus fringilla turpis quam, ut scelerisque libero consectetur at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla volutpat turpis nec lorem placerat condimentum. Praesent et eros dolor. Sed nec pulvinar ante, in imperdiet dui. Fusce non sollicitudin dolor.</p>
+	<span id="hide" class="button">Zobraziť menej</span>
+</div>
+<div class="inner">
+	<div class="cols">
+	<h3>Aktuality</h3>
+		<div class="col c1">
+			<h4>Výsledok veľkej ceny IMOLA</h4>
+			<img class="aktuality_foto" src="obrazky/male_logo.jpg" alt="logo">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tellus lorem. Phasellus tempor, est ac pretium dictum, mi diam maximus tellus, id rhoncus neque ex at risus.</p>
+			<h4>Novinky v tíme</h4>
+			<img class="aktuality_foto" src="obrazky/male_logo.jpg" alt="malelogo">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tellus lorem.</p>
+			<img class="aktuality_foto" src="obrazky/male_logo.jpg" alt="malelogo">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tellus lorem. Phasellus tempor, est ac pretium dictum, mi diam maximus tellus, id rhoncus neque ex at risus. Mauris et nibh magna. Pellentesque porttitor justo vel arcu dignissim sodales. Vivamus fringilla turpis quam, ut scelerisque libero consectetur at. </p>
+		</div>
+	</div>
+</div>
+<div class="inner2">
+	<div class="submenu">
+			<div class="item s1"> 
+				<p>O TÍME</p>
+				<a class="m_team" href="o_time.html">Viac TU</a>
+			</div>
+			<div class="item s2"> 
+				<p>JAZDCI</p>
+				<a class="jazdec" href="jazdci.html">Viac TU</a>
+			</div>
+			<div class="item s3"> 
+				<p>VEĽKÉ CENY</p>
+				<a class="m_team" href="ceny.html">Viac TU</a>
+			</div>
+			<div class="item s4"> 
+				<p>KONTAKT</p>
+				<a class="jazdec" href="kontakt.html">Viac TU</a>
+			</div>
+		</div>
+</div>
+</section>
+<footer id="footer">
+	<div class="inner">
+		<div class="copyright">
+			<p id="copy"> Copyright © 2021 MERCEDES AMG</p>
+			<p>All Rights Resrved.</p>
+		</div>
+		<div class="partners">
+			<h5>Social networks:</h5>
+			<ul>
+				<li class="fcb">
+					<a href="http://facebook.com" target="_blank"> Facebook</a>
+				</li>
+				<li class="ins">
+					<a href="http://instagram.com" target="_blank"> Instagram</a>
+				</li>
+				<li class="ytb">
+					<a href="http://youtube.com" target="_blank"> Youtube</a>
+				</li>
+			</ul>
+		</div>
+		<div class="links">
+			<p>
+				<a href="kontakt.html">Kontaktujne nás</a>
+			</p>
+		</div>
+	</div>
+</footer>	
+</body>
+</html>
